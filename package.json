@@ -1,0 +1,28 @@
+{
+  "name": "programming-giants-e2e",
+  "version": "1.0.0",
+  "description": "E2E test automation for Coding Giants' app using Playwright and TypeScript. Includes tests for various modules like registration and user management. Ensures cross-browser functionality and reliable application behavior through automated testing.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TesterSebastian/programming-giants-e2e.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/TesterSebastian/programming-giants-e2e/issues"
+  },
+  "homepage": "https://github.com/TesterSebastian/programming-giants-e2e#readme",
+  "devDependencies": {
+    "@playwright/test": "1.49.1",
+    "@types/node": "22.10.7"
+  },
+  "dependencies": {
+    "@faker-js/faker": "9.4.0",
+    "dotenv": "16.4.7",
+    "mssql": "11.0.1"
+  }
+}

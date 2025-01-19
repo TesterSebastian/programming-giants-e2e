@@ -1,16 +1,27 @@
-# Ignore Play! working directory #
-bin/
-/db
-.eclipse
-/lib/
-/logs/
-/modules
-/project/project
-/project/target
-/target
-tmp/
-test-result
-server.pid
-*.eml
-/dist/
-.cache
+# Ignore Node.js modules
+node_modules/
+
+# Ignore Playwright artifacts
+playwright-report/
+test-results/
+trace.zip
+*.png
+*.mp4
+
+# Ignore Playwright downloads
+.playwright/
+
+# Ignore TypeScript build output
+dist/
+build/
+*.js
+*.js.map
+*.d.ts
+
+# Ignore environment variables and config files
+.env
+.env.local
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
