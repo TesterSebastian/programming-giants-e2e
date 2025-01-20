@@ -26,11 +26,8 @@ export default class RegistrationFormPage  {
    readonly birthYearError: Locator;
  
    // Step 2: Course selection
-   readonly secondStepActive: Locator;
-   readonly programmingButton: Locator;
    readonly onlineForKidsButton: Locator;
-   readonly annualProgrammingCoursesButton: Locator;
-   readonly aiProgrammingCourseButton: Locator;
+
  
    // Step 3: Available slots
    readonly buttonWithAvailableSlots: Locator;
@@ -65,18 +62,7 @@ export default class RegistrationFormPage  {
         this.birthYearError = page.locator('label[for="birthYear"] ~ div .formError');
     
         // Step 2
-        this.secondStepActive = page.locator(
-          '[class="feature_registration-menu__item d-flex align-items-center justify-content-center feature_registration-menu__item--active"]',
-          { hasText: "Typ kursu" }
-        );
-        this.programmingButton = page.locator('.btn__text', { hasText: "PROGRAMOWANIE" });
         this.onlineForKidsButton = page.locator('[value="onlineKinds"]');
-        this.annualProgrammingCoursesButton = page.locator(
-          'button:has-text("Roczne kursy z programowania")'
-        );
-        this.aiProgrammingCourseButton = page.locator(
-          '[data-name="pierwsze kroki w programowaniu (kurs z elementami ai) online"] #registration-step-select-course-registered'
-        );
     
         // Step 3
         this.buttonWithAvailableSlots = page.locator(
